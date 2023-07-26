@@ -1,0 +1,23 @@
+{
+    "name": "ibibicloud/think-helper",
+    "description": "基于think-helper",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ibibicloud",
+            "homepage": "https://www.xyg.cool/"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "think\\": "src"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    }
+}
