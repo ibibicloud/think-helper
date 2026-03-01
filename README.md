@@ -1,16 +1,13 @@
-# thinkphp6 常用的一些扩展类库
 
-基于PHP7.1+
+## think-helper 助手工具库
+基于版本 https://github.com/top-think/think-helper/tree/v3.1.12
 
-[![PHP Composer](https://github.com/larvatecn/think-helper/actions/workflows/php.yml/badge.svg)](https://github.com/larvatecn/think-helper/actions/workflows/php.yml)
+文档地址 https://doc.thinkphp.cn/v8_0/think_helper.html
 
-> 以下类库都在`\\think\\helper`命名空间下
+### Str 字符串操作
+~~~
+use think\helper\Str;
 
-## Str
-
-> 字符串操作
-
-```
 // 检查字符串中是否包含某些字符串
 Str::contains($haystack, $needles)
 
@@ -32,4 +29,15 @@ Str::length($value)
 // 截取字符串
 Str::substr($string, $start, $length = null)
 
-```
+//驼峰转下划线
+Str::snake($value, $delimiter  =  '_')
+
+//下划线转驼峰(首字母小写)
+Str::camel($value)
+
+//下划线转驼峰(首字母大写)
+Str::studly
+
+//转为首字母大写的标题格式
+Str::title($value)
+~~~
