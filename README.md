@@ -4,6 +4,11 @@
 
 文档地址 https://doc.thinkphp.cn/v8_0/think_helper.html
 
+### 安装
+~~~
+composer require ibibicloud/think-helper
+~~~
+
 ### Str 字符串操作
 ~~~
 use think\helper\Str;
