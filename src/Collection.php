@@ -667,4 +667,5 @@ class Collection implements ArrayAccess, Countable, IteratorAggregate, JsonSeria
 
         return (array) $items;
     }
+    
 }

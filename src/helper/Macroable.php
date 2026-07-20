@@ -55,4 +55,5 @@ trait Macroable
 
         return call_user_func_array(static::$macro[$method]->bindTo(null, static::class), $args);        
     }
+    
 }
